@@ -1,5 +1,8 @@
 .navbar{
     background-color: #636e72;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .title{
@@ -7,6 +10,14 @@
     margin-left: 10px;
 }
 
+.cartLoginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartLoginContainer a{
+    margin-right: 15px;
+}
 .main{
-    height: 80%;
 }

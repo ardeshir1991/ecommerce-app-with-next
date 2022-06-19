@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { AppBar, Container, Toolbar, Typography } from "@mui/material";
 import styles from "./layout.module.css";
+import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
@@ -11,8 +12,26 @@ const Layout = ({ children }) => {
       </Head>
       <AppBar position="static" className={styles.navbar}>
         <Toolbar>
-          <Typography className={styles.title}>amazona</Typography>
+          <Link href="/">
+            <a>
+              <Typography variant="h4" className={styles.title}>
+                amazona
+              </Typography>
+            </a>
+          </Link>
         </Toolbar>
+        <div className={styles.cartLoginContainer}>
+          <Link href="/cart">
+            <a>
+              <Typography variant="h6">Cart</Typography>
+            </a>
+          </Link>
+          <Link href="/login">
+            <a>
+              <Typography variant="h6">Login</Typography>
+            </a>
+          </Link>
+        </div>
       </AppBar>
       <Container className={styles.main}>{children}</Container>
       <footer>
