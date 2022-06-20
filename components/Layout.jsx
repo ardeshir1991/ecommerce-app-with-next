@@ -19,6 +19,7 @@ const Layout = ({ title, description, children }) => {
         <title>{title ? `${title}-Ecommerce App` : "Ecommerce App"}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
+
       <MyAppBar position="static">
         <Toolbar>
           <Link href="/">
